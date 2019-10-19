@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label>Todo Title: </ion-label>
+      <ion-input required type="text" placeholder="Todo Title" [(ngModel)]="todo.title"></ion-input>
+    </ion-item>
+    <ion-grid>
+        <ion-row>
+          <ion-col size="12" offset="4">
+    <ion-item>
+        
+        <ion-select  [(ngModel)]="todo.status" >
+          <ion-select-option value="open">open</ion-select-option>
+          <ion-select-option value="done">done</ion-select-option>
+        </ion-select>
+    </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>  
+    <ion-item>
+        <ion-label>Item Detail: </ion-label>
+     <!-- <ion-input required type="text" placeholder="Item Detail" [(ngModel)]="todo.itemdetail"></ion-input> -->
+     <ion-textarea   rows="10"  [(ngModel)]="todo.itemdetail" name="message"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveTodo()">Save</ion-button>
+</ion-content>
