@@ -4,16 +4,16 @@
 
 export const environment = {
   production: false,
-
+  
   firebase : {
-    apiKey: "AIzaSyDamzhqPXxlZmT7L8LMZBvE4BfSYrAWQEU",
-    authDomain: "ionic2dofirebase.firebaseapp.com",
-    databaseURL: "https://ionic2dofirebase.firebaseio.com",
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "https://ionic2docom",
     projectId: "ionic2dofirebase",
-    storageBucket: "ionic2dofirebase.appspot.com",
-    messagingSenderId: "300995023865",
-    appId: "1:300995023865:web:6ce21a62f1efb004176328",
-    measurementId: "G-CG11RGBM6F"
+    storageBucket: "ionic2dofirebase.apt.com",
+    messagingSenderId: "30099“
+    appId: "1:30099502386328",
+    measurementId: "G-M6F"
   }
 
 };
